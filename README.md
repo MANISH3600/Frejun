@@ -44,6 +44,9 @@ Admin Panel: http://localhost:8000/admin/
 API Root: http://localhost:8000/api/v1/
 
 
+
+
+
 API Endpoints
 📌 Users
 ➕ Create User
@@ -66,4 +69,30 @@ Body:
 }
 
 
+📅 Bookings
+➕ Book Room
+POST /api/v1/bookings/
+Body for Private Room:
 
+{
+  "room_type": "PRIVATE",
+  "user": 1,
+  "slot": "15:00",
+  "date": "2025-06-25"
+}
+
+Body for Conference Room:
+{
+  "room_type": "CONFERENCE",
+  "team": 1,
+  "slot": "16:00",
+  "date": "2025-06-25"
+}
+
+Body for Shared Desk:
+{
+  "room_type": "SHARED",
+  "user": 2,
+  "slot": "15:00",
+  "date": "2025-06-25"
+}
