@@ -18,3 +18,21 @@ This is a RESTful API to manage a shared office setup — allowing users and tea
 
 
 
+## 🐳 Setup & Running with Docker Compose
+
+### 1. Clone the Repository
+
+git clone https://github.com/MANISH3600/Frejun.git
+cd frejun
+
+2. Build and Run
+docker-compose up --build
+
+
+3. Apply Migrations and Create Superuser
+In a new terminal:
+
+docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py createsuperuser
+
+
