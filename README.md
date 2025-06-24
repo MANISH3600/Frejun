@@ -54,6 +54,7 @@ API Root: http://localhost:8000/api/v1/
 
 POST /api/v1/users/
 Body:
+
 {
   "name": "Alice",
   "age": 28,
@@ -64,6 +65,7 @@ Body:
 ➕ Create Team
 POST /api/v1/teams/
 Body:
+
 {
   "name": "Team Alpha",
   "members": [1, 2, 3]
@@ -72,8 +74,10 @@ Body:
 
 📅 Bookings
 ➕ Book Room
+
 POST /api/v1/bookings/
 Body for Private Room:
+
 
 {
   "room_type": "PRIVATE",
@@ -83,6 +87,7 @@ Body for Private Room:
 }
 
 Body for Conference Room:
+
 {
   "room_type": "CONFERENCE",
   "team": 1,
@@ -91,6 +96,7 @@ Body for Conference Room:
 }
 
 Body for Shared Desk:
+
 {
   "room_type": "SHARED",
   "user": 2,
@@ -102,14 +108,20 @@ Body for Shared Desk:
 ❌ Cancel Booking
 POST /api/v1/cancel/{booking_id}/
 
-
 📖 View All Bookings
+
 GET /api/v1/bookings/all/
+
 Supports pagination.
 
+
 🏢 Available Rooms
+
 GET /api/v1/rooms/available/?slot=15:00&date=2025-06-25
+
 Returns available rooms for the given time slot.
+
+
 
 ⚙️ Room Capacity Rules
 Room Type	Limit	Booking Rules
