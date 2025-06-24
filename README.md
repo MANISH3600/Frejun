@@ -36,3 +36,34 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 
 
+Access URLs
+Swagger UI: http://localhost:8000/swagger/
+
+Admin Panel: http://localhost:8000/admin/
+
+API Root: http://localhost:8000/api/v1/
+
+
+API Endpoints
+📌 Users
+➕ Create User
+
+POST /api/v1/users/
+Body:
+{
+  "name": "Alice",
+  "age": 28,
+  "gender": "Female"
+}
+
+👥 Teams
+➕ Create Team
+POST /api/v1/teams/
+Body:
+{
+  "name": "Team Alpha",
+  "members": [1, 2, 3]
+}
+
+
+
