@@ -13,6 +13,8 @@ This is a RESTful API to manage a shared office setup — allowing users and tea
 - Enforces Room Limits (8 Private, 4 Conference, 3 Shared)
 - Swagger Docs and Admin Panel Included
 - Fully Dockerized with PostgreSQL
+- Supports pagination.
+
 
 ---
 
@@ -115,7 +117,7 @@ POST /api/v1/cancel/{booking_id}/
 
 GET /api/v1/bookings/all/
 
-Supports pagination.
+
 
 
 🏢 Available Rooms
