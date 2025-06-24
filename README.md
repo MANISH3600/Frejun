@@ -120,7 +120,9 @@ SHARED DESK	3	Up to 4 users per desk, auto-filled
 
 
 ### 🧪 Run Tests
-docker-compose exec web python manage.py test
+## docker-compose exec web python manage.py test
+
+
 📌 Tech Stack
 Python 3.11
 
