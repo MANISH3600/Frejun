@@ -36,7 +36,7 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 
 
-Access URLs
+### Access URLs
 Swagger UI: http://localhost:8000/swagger/
 
 Admin Panel: http://localhost:8000/admin/
@@ -47,7 +47,7 @@ API Root: http://localhost:8000/api/v1/
 
 
 
-API Endpoints
+### API Endpoints
 📌 Users
 ➕ Create User
 
@@ -119,7 +119,7 @@ SHARED DESK	3	Up to 4 users per desk, auto-filled
 
 
 
-🧪 Run Tests
+### 🧪 Run Tests
 docker-compose exec web python manage.py test
 📌 Tech Stack
 Python 3.11
