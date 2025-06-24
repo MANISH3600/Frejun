@@ -96,3 +96,41 @@ Body for Shared Desk:
   "slot": "15:00",
   "date": "2025-06-25"
 }
+
+
+❌ Cancel Booking
+POST /api/v1/cancel/{booking_id}/
+
+
+📖 View All Bookings
+GET /api/v1/bookings/all/
+Supports pagination.
+
+🏢 Available Rooms
+GET /api/v1/rooms/available/?slot=15:00&date=2025-06-25
+Returns available rooms for the given time slot.
+
+⚙️ Room Capacity Rules
+Room Type	Limit	Booking Rules
+PRIVATE	8	1 user only
+CONFERENCE	4	Min 3 team members
+SHARED DESK	3	Up to 4 users per desk, auto-filled
+
+
+
+
+🧪 Run Tests
+docker-compose exec web python manage.py test
+📌 Tech Stack
+Python 3.11
+
+Django + DRF
+
+PostgreSQL
+
+Docker + Docker Compose
+
+drf-yasg (Swagger)
+
+
+
