@@ -53,6 +53,7 @@ API Root: http://localhost:8000/api/v1/
 ➕ Create User
 
 POST /api/v1/users/
+
 Body:
 
 {
@@ -64,6 +65,7 @@ Body:
 👥 Teams
 ➕ Create Team
 POST /api/v1/teams/
+
 Body:
 
 {
@@ -76,6 +78,7 @@ Body:
 ➕ Book Room
 
 POST /api/v1/bookings/
+
 Body for Private Room:
 
 
