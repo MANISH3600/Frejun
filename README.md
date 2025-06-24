@@ -5,7 +5,7 @@ This is a RESTful API to manage a shared office setup — allowing users and tea
 ---
 
 ## 🚀 Features
-#- Handles Concurrent Booking Requests Safely
+- Handles Concurrent Booking Requests Safely
 - Book, Cancel, and View Bookings
 - Check Available Rooms by Time Slot
 - Shared Desk Auto-Fill (up to 4 users per desk)
